@@ -1,0 +1,18 @@
+[package]
+name = "decision-table-rs"
+version = "0.1.0"
+authors = ["ROki1988 <roki.swindler@gmail.com>"]
+edition = "2018"
+description = "generate decision table from yaml"
+
+[dependencies]
+clap = "2"
+serde = { version = "1.0", features = ["derive"] }
+serde_yaml = "0.8"
+csv = "1.1"
+anyhow = "1"
+
+[dev-dependencies.cargo-husky]
+version = "1"
+default-features = false
+features = ["precommit-hook", "run-cargo-fmt", "run-cargo-test", "run-cargo-clippy"]
